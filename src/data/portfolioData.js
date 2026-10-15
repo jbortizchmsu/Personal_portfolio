@@ -13,7 +13,7 @@ export const portfolioData = {
     headline: "Hi, I'm Jobert Ortiz.", // <-- REPLACE with your hero greeting
     heroTagline: "A passionate Full-Stack Developer & Database Designer crafting modern, accessible web applications and efficient data systems.", // <-- Hero subtitle
     bio: [
-      "Motivated and detail-oriented Information Systems student seeking an opportunity to apply my skills in programming and web and mobile application development. I aim to build reliable and efficient software solutions while continuously improving my technical and problem-solving abilities."
+      "Motivated and detail-oriented Information Systems student seeking an opportunity to apply my skills in programming in web and mobile application development. I aim to build reliable and efficient software solutions while continuously improving my technical and problem-solving abilities."
     ],
     email: "jbortiz.chmsu@gmail.com", // <-- REPLACE with your email
     location: "Talisay City, Philippines", // <-- Optional location
