@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', system-ui, -apple-system, sans-serif;
+    letter-spacing: -0.02em;
+  }
+
+  ::selection {
+    background-color: #56B6C6;
+    color: #0c0643;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f7f2e6;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #0c0643;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #dfcfad;
+  border-radius: 5px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #281e91;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8ACBD0;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #56B6C6;
+}
+
+/* Glassmorphism helpers */
+.glass {
+  background: rgba(251, 248, 242, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.dark .glass {
+  background: rgba(12, 6, 67, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Subtle pattern for background */
+.bg-grid-pattern {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(23, 12, 121, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(23, 12, 121, 0.04) 1px, transparent 1px);
+}
+
+.dark .bg-grid-pattern {
+  background-image: 
+    linear-gradient(to right, rgba(138, 203, 208, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(138, 203, 208, 0.04) 1px, transparent 1px);
+}
